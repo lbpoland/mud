@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head><title>Forgotten Realms MUD</title>
+<style>body{background:url('parchment.jpg');font-family:'Gothic';color:#333;}
+#main{display:flex;}#sidebar{width:20%;background:rgba(255,255,255,0.8);}
+#content{width:60%;height:80vh;overflow-y:auto;}#map{width:20%;background:#ddd;}
+#input{width:100%;position:fixed;bottom:0;}</style></head>
+<body><div id="main"><div id="sidebar">Inventory|Party</div>
+<div id="content">Welcome to the Realms...</div><div id="map">Map</div></div>
+<input id="input" type="text" placeholder="Command...">
+<script>const ws=new WebSocket("ws://localhost:3000");ws.onmessage=(e)=>document.getElementById("content").innerHTML+=e.data+"<br>";
+document.getElementById("input").addEventListener("keypress",e=>{if(e.key==="Enter"){ws.send(e.target.value);e.target.value="";}});</script></body></html>
