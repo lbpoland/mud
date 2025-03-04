@@ -1,0 +1,30 @@
+# Dawn of the Dragons Lib Directory Layout
+## Structure (March 4, 2025, MystraForge)
+- **/core/**: Engine files
+  - `armor_craft.c`, `command.c`, `commands.c`, `combat.c`, `crafting.c`, `item.c`, `login.c`, `login.h`, `mount.c`, `player.c`, `player_old.c`, `room.c`, `starting_room.c`, `teaching.c`, `world_map.c`
+- **/domains/**: World areas
+  - `/classes/` (drow/, elves/)
+  - `/commamds/` (empty, typo for commands/)
+  - `/crafting/`
+  - `/creators/`
+  - `/endgame/`
+  - `/guilds/`
+  - `/handlers/` (commands/command.c, rituals/lolth_blessing_*.c, spells/)
+  - `/npc/` (drow_priestess.c, npc.c)
+  - `/organizations/` (drow_houses/, guilds/, orc_clans/)
+  - `/quests/` (quest.c, quest_lolth.c)
+  - `/races/` (drow/zones/tlindhet.c, dwarves/, goblins/, high_elves/, humans/, orcs/, wild_elves/, wood_elves/)
+  - `/rituals/`
+  - `/spells/`
+  - `/world/` (waterdeep/zones/)
+- **/global/**: Global utilities
+- **/handlers/**: Event handlers
+- **/help/**: Help files
+- **/include/**: Headers (all_inc.h, log.h, master.h, player_handler.h)
+- **/items/**: Item definitions
+- **/log/**: Logs
+- **/obj/**: Objects
+- **/players/**: Player data (backup/a-z, banished/a-z, save/a-z)
+- **/secure/**: Security (login.c, master.c, simul_efun.c)
+- **/std/**: Standards (object.c)
+- **/web/**: Web interface (client.html)
